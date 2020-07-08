@@ -1,0 +1,11 @@
+
+Todo:
+  ✔ Método de refresh @done(20-07-08 09:47)
+  ✔ Borrar Facility plans obsoletos @done(20-07-08 09:47)
+  ✔ Añadir tooltips al de reservas @done(20-07-08 09:47)
+
+  ✔ Revisar generación de Shifts @critical @done(20-07-01 14:36)
+    ✔ Cambiar a selector de semanas @high @done(20-07-01 14:54)
+  ✔ Mirar link @high @done(20-07-01 18:18)
+  ☐ Porque no se generan para la última planta? @low 
+  
