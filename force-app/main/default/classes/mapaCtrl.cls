@@ -31,13 +31,26 @@ public with sharing class mapaCtrl {
          return 'OK';
     }
     public static Map<String,Integer> getAreas (List<String> puestos) {
+        //TODO devolver el nombre del Space en la lista: XXX - YYY - Espacio 1
+        
+
         Map<String,Integer> resultado = new Map<String,Integer>();
         for (String p : puestos) {
-            Integer num = resultado.get(p.substring(0,1));
+            // TFN 
+            //String sp = p.substring(0,1);
+            //BAT
+            String sp;
+            if (p.substring(0,1)=='A' ||p.substring(0,1)=='B') {
+                sp = 'Area 1';
+            }
+            else {
+                sp = 'Area 2';
+            }
+            Integer num = resultado.get(sp);
             if (num==null) 
-                resultado.put(p.substring(0,1),1);
+                resultado.put(sp,1);
             else 
-                resultado.put(p.substring(0,1),num+1);
+                resultado.put(sp,num+1);
         }
         return resultado;
     }
